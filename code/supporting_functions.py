@@ -7,6 +7,7 @@ import time
 
 # Define a function to convert telemetry strings to float independent of decimal convention
 def convert_to_float(string_to_convert):
+      print(string_to_convert)
       if ',' in string_to_convert:
             float_value = np.float(string_to_convert.replace(',','.'))
       else: 
